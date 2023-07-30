@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Recipe Repo
+          Learn React
         </a>
       </header>
     </div>
