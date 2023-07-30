@@ -27,10 +27,12 @@
   margin: 20px;
   background-color: $color-pallet5;
   box-shadow: 0 0 0 1px black;
+  height: 400px;
+  width: 800px;
 }
 
 .Footer{
-  position: fixed;
+  margin-top: 10px;
   background-color: $color-pallet1;
   bottom: 0;
   left: 0;
