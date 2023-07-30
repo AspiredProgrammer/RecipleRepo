@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.Header {
+    padding: 60px;
+    text-align: center;
+    background-color: $color-pallet1;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.SearchBar {
+  padding: 60px;
+  text-align: center;
+  background-color: $color-pallet2;
+  color: white;
+  font-size: 30px;
+}
+
+.Body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.RecipeCard {
+  margin: 20px;
+  background-color: $color-pallet5;
+  box-shadow: 0 0 0 1px black;
+}
+
+.Footer{
+  position: fixed;
+  background-color: $color-pallet1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+}
