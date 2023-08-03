@@ -7,25 +7,25 @@ import './styles.scss';
 function Header() {
     return (
         <div>
-          <BrowserRouter>
+         <BrowserRouter>
                 <div className="Header">
                     <ul>
-                        <li type="Home">
+                        <li className="button-19" type="Home">
                             <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
                                 Home
                             </Link>
                         </li>
-                        <li type="Easy-Dinner">
+                        <li className="button-19" type="Easy-Dinner">
                             <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
                                 Easy Dinner
                             </Link>
                         </li>
-                        <li type="Family-Dinner">
+                        <li className="button-19" type="Family-Dinner">
                             <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
                                 Family Dinner
                             </Link>
                         </li>
-                        <li type="Healthy">
+                        <li className="button-19" type="Healthy">
                             <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
                                 Healthy
                             </Link>
