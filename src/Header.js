@@ -9,18 +9,28 @@ function Header() {
         <div>
           <BrowserRouter>
                 <div className="Header">
-                    <button type="Home">
-                        <Link to="/">Home</Link>
-                    </button>
-                    <button type="Easy-Dinner">
-                        <Link to="/search">Easy Dinner</Link>
-                    </button>
-                    <button type="Family-Dinner">
-                        <Link to="/search">Family Dinner</Link>
-                    </button>
-                    <button type="Healthy">
-                        <Link to="/search">Healthy</Link>
-                    </button>
+                    <ul>
+                        <li type="Home">
+                            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
+                                Home
+                            </Link>
+                        </li>
+                        <li type="Easy-Dinner">
+                            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
+                                Easy Dinner
+                            </Link>
+                        </li>
+                        <li type="Family-Dinner">
+                            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
+                                Family Dinner
+                            </Link>
+                        </li>
+                        <li type="Healthy">
+                            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/search">
+                                Healthy
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             
     

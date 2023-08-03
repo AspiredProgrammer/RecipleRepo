@@ -10,21 +10,27 @@ const Home = () => {
         <div className="Body">
             <div className="RecipeCard">
                 Breakfast
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
             <div className="RecipeCard">
                 Lunch
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
             <div className="RecipeCard">
                 Dinner
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
             <div className="RecipeCard">
                 Snack
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
             <div className="RecipeCard">
                 Cuisine
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
             <div className="RecipeCard">
                 Teatime
+                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
         </div>
     </div>
