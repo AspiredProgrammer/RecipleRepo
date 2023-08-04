@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../SearchBar";
+import SearchBar from "../../Food Database/SearchBar";
 
 const EasyDinner = () => {
   //time = 30 mins

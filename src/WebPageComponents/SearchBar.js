@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./styles.scss";
-import Search from "./Search";
+import "../Styles/styles.scss";
+import Search from "../Recipe/Search";
 const SearchBar = () => {
   //const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&random=true`);
 
