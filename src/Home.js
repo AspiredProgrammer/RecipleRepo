@@ -24,10 +24,7 @@ const Home = () => {
                 Snack
                 <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
             </div>
-            <div className="RecipeCard">
-                Cuisine
-                <img src="https://placehold.co/600x400/png" alt="image placeholder"/>
-            </div>
+            
             <div className="RecipeCard">
                 Teatime
                 <img src="https://placehold.co/600x400/png" alt="image placeholder"/>

@@ -1,12 +1,18 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 
-const Search = () => {
+const Search = ({title, calories, image, ingredients}) => {
+  
   return (
     <div>
       <SearchBar/>
-      <h1>Welcome to the Search Page</h1>
-      <p>This is the Search page of your application.</p>
+      <ol>
+        {ingredients.map(ingredient => (
+          <li>{ingredient.text}</li>
+        ))}
+      </ol>
+      <p>Calories: {calories.toFixed()}</p>
+      <img src={image} alt=""/>
     </div>
   );
 };
