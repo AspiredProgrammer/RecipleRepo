@@ -1,4 +1,2 @@
-const Nutrition = () => {
-
-}
+const Nutrition = () => {};
 export default Nutrition;

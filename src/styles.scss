@@ -1,23 +1,22 @@
-@import './variables.scss';
+@import "./variables.scss";
 // #######################APP####################
 
 // #######################HEADER####################
 
-
 .button-19 {
   appearance: button;
-  background-color: #1899D6;
+  background-color: #1899d6;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: din-round,sans-serif;
+  font-family: din-round, sans-serif;
   font-size: 15px;
   font-weight: 700;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   line-height: 20px;
   margin: 0;
   outline: none;
@@ -27,7 +26,7 @@
   text-transform: uppercase;
   touch-action: manipulation;
   transform: translateZ(0);
-  transition: filter .2s;
+  transition: filter 0.2s;
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
@@ -37,7 +36,7 @@
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #1CB0F6;
+  background-color: #1cb0f6;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -64,7 +63,6 @@
 .button-19:disabled {
   cursor: auto;
 }
-
 
 * {
   overflow-x: hidden;
@@ -100,15 +98,13 @@
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 10px;
-  
+
   border-radius: 30px;
   padding: 10px 20px;
-  
 }
 
 .Header ul li :hover {
   cursor: pointer;
-  
 }
 
 // #######################SEARCHBAR####################
@@ -120,23 +116,22 @@
   font-size: 30px;
 }
 
-.SearchBar input{
+.SearchBar input {
   border-radius: 25px;
   border: 1px solid;
-  padding: 10px; 
+  padding: 10px;
   width: 100%;
-  height: 50%; 
+  height: 50%;
   margin-right: 30%;
   box-sizing: border-box;
 }
-
 
 // #######################BODY####################
 .Body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 
 .RecipeCard {
@@ -157,9 +152,8 @@
   text-align: center;
 }
 
-
 // #######################FOOTER####################
-.Footer{
+.Footer {
   margin-top: 1%;
   background-color: $color-pallet1;
   bottom: 0;
@@ -169,4 +163,3 @@
   text-align: center;
   position: static; //fixes the footer to the bottom
 }
-
