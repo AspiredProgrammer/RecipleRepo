@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
-import EasyDinner from "./Recipe/EasyDinner";
-import FamilyDinner from "./Recipe/FamilyDinner";
-import Healthy from "./Recipe/Healthy";
-import Search from "./Search";
-import "./styles.scss";
+import EasyDinner from "../Recipe/SubComponents/EasyDinner";
+import FamilyDinner from "../Recipe/SubComponents/FamilyDinner";
+import Healthy from "../Recipe/SubComponents/Healthy";
+import Search from "../Recipe/Search";
+import "../Styles/styles.scss";
 
 function Header() {
   return (

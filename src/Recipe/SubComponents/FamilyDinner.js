@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../SearchBar";
+import SearchBar from "../../WebPageComponents/SearchBar";
 
 const FamilyDinner = () => {
   //dishType = main course

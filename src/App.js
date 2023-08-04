@@ -1,7 +1,7 @@
-import "./App.css";
-import "./styles.scss";
-import Footer from "./Footer";
-import Header from "./Header";
+import "./Styles/App.css";
+import "./Styles/styles.scss";
+import Footer from "./WebPageComponents/Footer";
+import Header from "./WebPageComponents/Header";
 import React from "react";
 
 function App() {
