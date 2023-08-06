@@ -6,6 +6,8 @@ import FamilyDinner from "../Recipe/SubComponents/FamilyDinner";
 import Healthy from "../Recipe/SubComponents/Healthy";
 import Search from "../Recipe/Search";
 import "../Styles/styles.scss";
+import Nutrition from "../Nutrition/Nutrition";
+import FoodDatabase from "../FoodDatabase/FoodDatabase";
 
 function Header() {
   return (
@@ -53,12 +55,12 @@ function Header() {
                 Nutritional Analysis
               </Link>
             </li>
-            <li className="button-19" type="Food">
+            <li className="button-19" type="FoodDatbase">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/food"
+                to="/foodDatabase"
               >
-                Food List
+                Food Database
               </Link>
             </li>
           </ul>
@@ -83,13 +85,11 @@ function Header() {
           />
           <Route
             path="/nutrition"
-            element={<Healthy />}
-            // element={<Search search={"Healthy"} />}
+            element={<Nutrition />}
           />
           <Route
-            path="/food"
-            element={<Healthy />}
-            // element={<Search search={"Healthy"} />}
+            path="/foodDatabase"
+            element={<FoodDatabase />}
           />
         </Routes>
       </BrowserRouter>

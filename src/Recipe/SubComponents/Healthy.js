@@ -8,10 +8,10 @@ const FamilyDinner = () => {
     <div>
       <SearchBar />
       <h1>Welcome to the "Healthy" Recipe Page</h1>
-      <p>
+      <p className="Intro">
         This page provides a list of recipes falling under the category of
         'healthy' meals. <br />
-        Healthy recipes provide meals with the recommended amount of 700
+        Healthy recipes provide meals with the recommended amount of 700 <br/>
         calories (for a full-grown adult).
       </p>
     </div>

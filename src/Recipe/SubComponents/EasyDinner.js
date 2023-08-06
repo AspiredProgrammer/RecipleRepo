@@ -9,10 +9,10 @@ const EasyDinner = () => {
     <div>
       <SearchBar />
       <h1>Welcome to the "EasyDinner" Recipe Page</h1>
-      <p>
+      <p className="Intro">
         This page provides a list of recipes falling under the category of 'easy
         dinner' meals. <br />
-        Easy dinner recipes provide dinner meals with a short prep-time of 30
+        Easy dinner recipes provide dinner meals with a short prep-time of 30 <br/>
         minutes or less.
       </p>
     </div>
