@@ -4,7 +4,7 @@ import Home from "./Home";
 import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
-import Search from "../functions/Search";
+import Search from "./RecipeCard";
 import "../styles/styles.scss";
 import Nutrition from "../pages/Nutrition";
 import FoodDatabase from "../pages/FoodDatabase";
@@ -83,14 +83,8 @@ function Header() {
             element={<Healthy />}
             // element={<Search search={"Healthy"} />}
           />
-          <Route
-            path="/nutrition"
-            element={<Nutrition />}
-          />
-          <Route
-            path="/foodDatabase"
-            element={<FoodDatabase />}
-          />
+          <Route path="/nutrition" element={<Nutrition />} />
+          <Route path="/foodDatabase" element={<FoodDatabase />} />
         </Routes>
       </BrowserRouter>
     </div>

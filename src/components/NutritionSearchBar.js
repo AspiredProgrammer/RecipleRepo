@@ -12,19 +12,8 @@ const NutritionSearchBar = () => {
     };
 
   const handleKeyDown = async (event) => {
-    // if (event.key === "Enter") {
-    //   try {
-    //     const response = await fetch(
-    //       `https://api.edamam.com/api/recipes/v2?type=public&q=${text}&app_id=YOUR_APP_ID&app_key=YOUR_APP_KEY`
-    //     );
-    //     const data = await response.json();
-    //     setFoodItem(data.hits);
-    //   } catch (error) {
-    //     console.error("Error fetching food: ", error);
-    //   }
 
-      //console.log('do validate')
-      //
+    
     }
   
   useEffect(() => {});

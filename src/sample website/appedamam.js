@@ -11,8 +11,7 @@ const AppEdamam = () => {
   const [query, setQuery] = useState(" ");
 
   useEffect(() => {
-    getRecipes();
-  }, [query]);
+    getRecipes()}, [query]);
 
   const getRecipes = async () => {
     const response = await fetch(

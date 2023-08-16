@@ -125,7 +125,12 @@
   margin-right: 30%;
   box-sizing: border-box;
 }
-
+.Form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 // #######################BODY####################
 .Intro {
   //background-color: $color-pallet5;
