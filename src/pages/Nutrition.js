@@ -1,4 +1,4 @@
-import NutritionSearchBar from "./NutritionSearchBar";
+import NutritionSearchBar from "../components/NutritionSearchBar";
 
 const Nutrition = () => {
     return(

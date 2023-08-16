@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/styles.scss";
+import "../styles/styles.scss";
 
-
-const FoodSearchBar = () => {
+const NutritionSearchBar = () => {
     //const response = await fetch(``);
 
     const [text, setText] = useState("");
@@ -32,7 +31,7 @@ const FoodSearchBar = () => {
 
   return (
     <div className="SearchBar">
-      <strong>Search here for Food</strong>
+      <strong>Search here for Nutritional Value of Recipes </strong>
       <input
         type="text"
         onKeyDown={handleKeyDown}
@@ -43,4 +42,4 @@ const FoodSearchBar = () => {
   );
 };
 
-export default FoodSearchBar;
+export default NutritionSearchBar;
