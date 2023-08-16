@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../styles/styles.scss";
+import "../Styles/styles.scss";
 
 
-const Search = (props) => {
+const Search = () => {
     const [text, setText] = useState("");
     const [submitted, setSubmitted] = useState("");
     const [recipes, setRecipes] = useState("");
@@ -25,6 +25,7 @@ const Search = (props) => {
 
         console.log('not passed')
         //
-        }
-    };
-}
+      }
+  };
+
+  export default Search;
