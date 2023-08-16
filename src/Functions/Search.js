@@ -13,7 +13,7 @@ const Search = (props) => {
         try {
             console.log('passed')
             const response = await fetch(
-            `https://api.edamam.com/search?q=${text}&app_id=${RECIPE_APP_ID}&app_key=${RECIPE_APP_KEY}&from=0&to=50&${props.time}`
+            `${props.api}`
             );
             console.log('passed')
             const data = await response.json();
@@ -26,6 +26,10 @@ const Search = (props) => {
         console.log('not passed')
         //
       }
+
+      useEffect(() => { 
+        getRecipes();
+      }, [text]);
   };
 
   export default Search;

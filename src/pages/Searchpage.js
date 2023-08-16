@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import "../Styles/styles.scss";
-import RecipeCard from "./RecipeCard";
-const SearchBar = () => {
+import RecipeCard from "../components/RecipeCard";
+const SearchPage = () => {
   //const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&random=true`);
 
   const [text, setText] = useState("");
@@ -129,5 +129,5 @@ const SearchBar = () => {
 };
 
 
-export default SearchBar;
+export default SearchPage;
 

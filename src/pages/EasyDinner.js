@@ -1,10 +1,9 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
 import Search  from "../Functions/Search";
-const EasyDinner = () => {
+const EasyDinner = (props) => {
   //time = 30 mins
   //mealType = dinner
-  //Please add more suggestions that decrease the amount of possible results so it is a more specific list
   return (
     <div>
       <h1>Welcome to the "EasyDinner" Recipe Page</h1>
@@ -16,7 +15,7 @@ const EasyDinner = () => {
       </p>
       <div>
         <Search
-        time={"30"}
+        api={`https://api.edamam.com/api/search?q=${props.text}&app_id=${props.RECIPE_APP_ID}&app_key=${props.RECIPE_APP_KEY}&from=0&to=50&$&time=30&mealType=Dinner`}
         />
       </div>
 

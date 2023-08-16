@@ -4,10 +4,8 @@ import Home from "./Home";
 import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
-import Search from "./RecipeCard";
 import "../Styles/styles.scss";
-import Nutrition from "../pages/Nutrition";
-import FoodDatabase from "../pages/FoodDatabase";
+import SearchPage from "../pages/Searchpage";
 
 function Header() {
   return (
@@ -47,22 +45,6 @@ function Header() {
                 Healthy
               </Link>
             </li>
-            <li className="button-19" type="Nutrition">
-              <Link
-                style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/nutrition"
-              >
-                Nutritional Analysis
-              </Link>
-            </li>
-            <li className="button-19" type="FoodDatbase">
-              <Link
-                style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/foodDatabase"
-              >
-                Food Database
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -83,8 +65,10 @@ function Header() {
             element={<Healthy />}
             // element={<Search search={"Healthy"} />}
           />
-          <Route path="/nutrition" element={<Nutrition />} />
-          <Route path="/foodDatabase" element={<FoodDatabase />} />
+          <Route 
+          path="/searchPage"
+          element={<SearchPage/>}
+          />
         </Routes>
       </BrowserRouter>
     </div>
