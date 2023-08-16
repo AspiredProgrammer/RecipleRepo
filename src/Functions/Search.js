@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../Styles/styles.scss";
 
 
-const Search = () => {
+const Search = (props) => {
     const [text, setText] = useState("");
     const [submitted, setSubmitted] = useState("");
     const [recipes, setRecipes] = useState("");
@@ -13,7 +13,7 @@ const Search = () => {
         try {
             console.log('passed')
             const response = await fetch(
-            `https://api.edamam.com/search?q=${text}&app_id=${RECIPE_APP_ID}&app_key=${RECIPE_APP_KEY}&from=0&to=50&`
+            `https://api.edamam.com/search?q=${text}&app_id=${RECIPE_APP_ID}&app_key=${RECIPE_APP_KEY}&from=0&to=50&${props.time}`
             );
             console.log('passed')
             const data = await response.json();
