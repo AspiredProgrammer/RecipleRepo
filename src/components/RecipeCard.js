@@ -1,32 +1,19 @@
 import React from "react";
-// import SearchBar from "./SearchBar";
+import style from "../styles/recipecard.module.css";
 
-// const RecipeCard = ({ title, calories, image, ingredients }) => {
-//   return (
-//     <div>
-//       <ol>
-//         {ingredients.map((ingredient) => (
-//           <li>{ingredient.text}</li>
-//         ))}
-//       </ol>
-//       <p>Calories: {calories.toFixed()}</p>
-//       <img src={image} alt="" />
-//     </div>
-//   );
-// };
-
-const RecipeCard = ({ recipe }) => {
-  const {label: title, calories, image, ingredients } = recipe;
-   return (
-     <div>
-       <ol>
-         {ingredients.map((ingredient) => (
-           <li>{ingredient.text}</li>
-         ))}
-       </ol>
-        <p>Calories: {calories.toFixed()}</p>
-       <img src={image} alt="" />
-     </div>
-   );
+const Recipe = ({ title, calories, image, ingredients }) => {
+  return (
+    <div className={style.recipe}>
+      <h1>{title}</h1>
+      <ol>
+        {ingredients.map((ingredient) => (
+          <li>{ingredient.text}</li>
+        ))}
+      </ol>
+      <p>Calories: {calories.toFixed()}</p>
+      <img className={style.image} src={image} alt="" />
+    </div>
+  );
 };
-export default RecipeCard;
+
+export default Recipe;

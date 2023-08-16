@@ -1,10 +1,10 @@
 import React from "react";
-import RecipeEdamam from "./recipeedamam";
+import RecipeCard from "./RecipeCard";
 
 const RecipeList = ({ recipes }) => (
   <div className="recipes">
     {recipes.map((recipe) => (
-      <RecipeEdamam
+      <RecipeCard
         key={recipe.recipe.label}
         title={recipe.recipe.label}
         calories={recipe.recipe.calories}

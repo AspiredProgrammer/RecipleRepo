@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import React from "react";
-import Home from "./Home";
+import Home from "../pages/Home";
 import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
-import "../Styles/styles.scss";
-import SearchPage from "../pages/Searchpage";
+import "../styles/styles.scss";
+import SearchPage from "../pages/SearchPage";
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
       <BrowserRouter>
         <div className="Header">
           <ul>
-            <li className="button-19" type="Home">
+            <li className="Button" type="Home">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 to="/"
@@ -21,7 +21,15 @@ function Header() {
                 Home
               </Link>
             </li>
-            <li className="button-19" type="Easy-Dinner">
+            <li className="Button" type="Search">
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/search"
+              >
+                Search
+              </Link>
+            </li>
+            <li className="Button" type="Easy-Dinner">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 to="/easyDinner"
@@ -29,7 +37,7 @@ function Header() {
                 Easy Dinner
               </Link>
             </li>
-            <li className="button-19" type="Family-Dinner">
+            <li className="Button" type="Family-Dinner">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 to="/familyDinner"
@@ -37,10 +45,18 @@ function Header() {
                 Family Dinner
               </Link>
             </li>
-            <li className="button-19" type="Healthy">
+            <li className="Button" type="Healthy">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 to="/healthy"
+              >
+                Healthy
+              </Link>
+            </li>
+            <li className="Button" type="Search">
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/search"
               >
                 Healthy
               </Link>
@@ -50,25 +66,10 @@ function Header() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/EasyDinner"
-            element={<EasyDinner />}
-            // element={<Search search={"Easy Dinner"} />}
-          />
-          <Route
-            path="/familyDinner"
-            element={<FamilyDinner />}
-            // element={<Search search={"Family Dinner"} />}
-          />
-          <Route
-            path="/healthy"
-            element={<Healthy />}
-            // element={<Search search={"Healthy"} />}
-          />
-          <Route 
-          path="/searchPage"
-          element={<SearchPage/>}
-          />
+          <Route path="/EasyDinner" element={<EasyDinner />} />
+          <Route path="/familyDinner" element={<FamilyDinner />} />
+          <Route path="/healthy" element={<Healthy />} />
+          <Route path="/search" element={<SearchPage />} />
         </Routes>
       </BrowserRouter>
     </div>

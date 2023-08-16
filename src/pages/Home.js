@@ -1,17 +1,15 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import { useNavigate } from 'react-router-dom';
+import SearchBar from "../components/SearchForm";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <div className="Home">
-      
       <h1>Welcome to the Home Page</h1>
       <p>This is the home page of your application.</p>
       <div className="Body">
-        <button onClick={() => useNavigate("")}>Click here to search for reciepes</button>
-        {/* <div className="RecipeCard">
+        <div className="RecipeCard">
           Breakfast
           <img src="https://placehold.co/600x400/png" alt="image placeholder" />
         </div>
@@ -31,12 +29,8 @@ const Home = () => {
         <div className="RecipeCard">
           Teatime
           <img src="https://placehold.co/600x400/png" alt="image placeholder" />
-        </div> */}
+        </div>
       </div>
-
-      
-
-
     </div>
   );
 };

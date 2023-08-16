@@ -3,7 +3,7 @@
 
 // #######################HEADER####################
 
-.button-19 {
+.Button {
   appearance: button;
   background-color: #1899d6;
   border: solid transparent;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-.button-19:after {
+.Button:after {
   background-clip: padding-box;
   background-color: #1cb0f6;
   border: solid transparent;
@@ -49,18 +49,18 @@
   z-index: -1;
 }
 
-.button-19:main,
+.Button:main,
 .button-19:focus {
   user-select: auto;
 }
 
-.button-19:hover:not(:disabled) {
+.Button:hover:not(:disabled) {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
   background-color: rgb(222, 230, 236);
 }
 
-.button-19:disabled {
+.Button:disabled {
   cursor: auto;
 }
 
@@ -107,8 +107,8 @@
   cursor: pointer;
 }
 
-// #######################SEARCHBAR####################
-.SearchBar {
+// #######################SEARCHFORM####################
+.SearchForm {
   padding: 60px;
   text-align: center;
   background-color: $color-pallet2;
@@ -116,7 +116,7 @@
   font-size: 30px;
 }
 
-.SearchBar input {
+.SearchForm form input {
   border-radius: 25px;
   border: 1px solid;
   padding: 10px;
@@ -132,10 +132,6 @@
   justify-content: space-evenly;
 }
 // #######################BODY####################
-.Intro {
-  //background-color: $color-pallet5;
-  //Create a small block to emphasize the explanation for each page??
-}
 
 
 .Body {
