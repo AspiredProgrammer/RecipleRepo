@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
-import search  from "..functions/Search";
+import Search  from "../Functions/Search";
 const EasyDinner = () => {
   //time = 30 mins
   //mealType = dinner

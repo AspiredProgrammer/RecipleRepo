@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/styles.scss";
+import "../Styles/styles.scss";
 
 
 const FoodSearchBar = () => {

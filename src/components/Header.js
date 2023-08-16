@@ -5,7 +5,7 @@ import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
 import Search from "./RecipeCard";
-import "../styles/styles.scss";
+import "../Styles/styles.scss";
 import Nutrition from "../pages/Nutrition";
 import FoodDatabase from "../pages/FoodDatabase";
 
