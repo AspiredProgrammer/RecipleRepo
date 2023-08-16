@@ -3,6 +3,10 @@ import "../styles/styles.scss";
 
 const NutritionSearchBar = () => {
     //const response = await fetch(``);
+    //Nutrition API
+    const NUTRITION_API_KEY = "604d449638b624dc7312b9d677e3f9f2 	— ";
+    const NUTRITION_API_ID = "d1ae07e0";
+
 
     const [text, setText] = useState("");
     const [submitted, setSubmitted] = useState("");

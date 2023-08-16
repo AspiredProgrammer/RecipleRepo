@@ -4,7 +4,9 @@ import "../styles/styles.scss";
 
 const FoodSearchBar = () => {
     //const response = await fetch(``);
-
+    const FOOD_API_KEY = "013b762d04f6e9c83c2198aa93dc6416 	— ";
+    const FOOD_API_ID = "ed9c6b85";
+    
     const [text, setText] = useState("");
     const [submitted, setSubmitted] = useState("");
     const [foodItem, setFoodItem] = useState("");
