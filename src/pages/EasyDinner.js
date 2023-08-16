@@ -2,21 +2,19 @@ import React, { useState, useEffect } from "react";
 import { APIByType } from "../services/APIByType";
 import RecipeList from "../components/RecipeList";
 
-const EasyDinner = (props) => {
+const EasyDinner = () => {
   const [recipes, setRecipes] = useState([]);
-  const [query, setQuery] = useState("Dinner&time=0-30&health=alcohol-free&dishType=main course");
+  const [mealType] = useState("Dinner&time=0-30&health=alcohol-free&dishType=main course");
 
   useEffect(() => {
-    if (query.trim() !== "") {
-      getRecipes();
-    }
-  }, [query]);
+    getRecipes();
+  }, [mealType]);
 
   const getRecipes = async () => {
-    const data = await APIByType(query);
+    const data = await APIByType(mealType);
     setRecipes(data);
   };
-  
+
   return (
     <div>
       <h1>Welcome to the "EasyDinner" Recipe Page</h1>
