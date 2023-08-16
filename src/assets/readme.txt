@@ -1,0 +1,1 @@
+contains static assets like images, icons, font, etc.

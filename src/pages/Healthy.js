@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../../WebPageComponents/SearchBar";
+import SearchBar from "../components/SearchBar";
 
 const FamilyDinner = () => {
   //calories = 700 for healthy

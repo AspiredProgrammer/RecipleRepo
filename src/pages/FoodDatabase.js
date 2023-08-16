@@ -1,4 +1,4 @@
-import FoodSearchBar from "./FoodSearchBar.js";
+import FoodSearchBar from "../components/FoodSearchBar.js";
 
 const FoodDatabase = () => {
 

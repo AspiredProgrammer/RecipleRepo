@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/styles.scss";
+import "../styles/styles.scss";
 
-
-const FoodSearchBar = () => {
+const NutritionSearchBar = () => {
     //const response = await fetch(``);
-    const FOOD_API_KEY = "013b762d04f6e9c83c2198aa93dc6416 	— ";
-    const FOOD_API_ID = "ed9c6b85";
-    
+    //Nutrition API
+    const NUTRITION_API_KEY = "604d449638b624dc7312b9d677e3f9f2 	— ";
+    const NUTRITION_API_ID = "d1ae07e0";
+
+
     const [text, setText] = useState("");
     const [submitted, setSubmitted] = useState("");
     const [foodItem, setFoodItem] = useState("");
@@ -34,7 +35,7 @@ const FoodSearchBar = () => {
 
   return (
     <div className="SearchBar">
-      <strong>Search here for Food</strong>
+      <strong>Search here for Nutritional Value of Recipes </strong>
       <input
         type="text"
         onKeyDown={handleKeyDown}
@@ -45,4 +46,4 @@ const FoodSearchBar = () => {
   );
 };
 
-export default FoodSearchBar;
+export default NutritionSearchBar;

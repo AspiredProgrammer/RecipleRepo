@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
-import EasyDinner from "../Recipe/SubComponents/EasyDinner";
-import FamilyDinner from "../Recipe/SubComponents/FamilyDinner";
-import Healthy from "../Recipe/SubComponents/Healthy";
-import Search from "../Recipe/Search";
-import "../Styles/styles.scss";
-import Nutrition from "../Nutrition/Nutrition";
-import FoodDatabase from "../FoodDatabase/FoodDatabase";
+import EasyDinner from "../pages/EasyDinner";
+import FamilyDinner from "../pages/FamilyDinner";
+import Healthy from "../pages/Healthy";
+import Search from "../functions/Search";
+import "../styles/styles.scss";
+import Nutrition from "../pages/Nutrition";
+import FoodDatabase from "../pages/FoodDatabase";
 
 function Header() {
   return (

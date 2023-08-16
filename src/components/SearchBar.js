@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/styles.scss";
-import Search from "../Recipe/Search";
-
+import "../styles/styles.scss";
+import Search from "../functions/Search";
 const SearchBar = () => {
   //const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&random=true`);
-
-
-  const RECIPE_APP_ID = "015472df";
-  const RECIPE_APP_KEY = "f5c90ece39c8ee2ffb082c15b189b178 	—";
 
   const [text, setText] = useState("");
   const [submitted, setSubmitted] = useState("");
@@ -16,13 +11,11 @@ const SearchBar = () => {
     setText(e.target.value);
   };
 
-  useEffect(() => { handleKeyDown()}, []);
-
   const handleKeyDown = async (event) => {
     if (event.key === "Enter") {
       try {
         const response = await fetch(
-          `https://api.edamam.com/api/recipes/v2?type=public&q=${text}&app_id=015472df&app_key=f5c90ece39c8ee2ffb082c15b189b178`
+          `https://api.edamam.com/api/recipes/v2?type=public&q=${text}&app_id=YOUR_APP_ID&app_key=YOUR_APP_KEY`
         );
         const data = await response.json();
         setRecipes(data.hits);
@@ -34,7 +27,7 @@ const SearchBar = () => {
       //
     }
   };
-  
+  useEffect(() => {});
 
   return (
     <div className="SearchBar">
@@ -64,3 +57,4 @@ const RecipeCard = ({ recipe }) => {
 };
 
 export default SearchBar;
+
