@@ -4,8 +4,9 @@ import Home from "../pages/Home";
 import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
-import "../styles/styles.scss";
+import "../Styles/styles.scss";
 import SearchPage from "../pages/Searchpage";
+import Output from "../pages/Output";
 
 function Header() {
   return (
@@ -53,14 +54,7 @@ function Header() {
                 Healthy
               </Link>
             </li>
-            {/* <li className="Button" type="Search">
-              <Link
-                style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/search"
-              >
-                Healthy
-              </Link>
-            </li> */}
+            
           </ul>
         </div>
 
@@ -70,6 +64,7 @@ function Header() {
           <Route path="/FamilyDinner" element={<FamilyDinner />} />
           <Route path="/Healthy" element={<Healthy />} />
           <Route path="/Search" element={<SearchPage />} />
+          <Route path="/CategoryResults" element={<Output />} />
         </Routes>
       </BrowserRouter>
     </div>

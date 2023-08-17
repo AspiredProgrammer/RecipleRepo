@@ -1,1 +1,0 @@
-this folder contains the page base used in each page

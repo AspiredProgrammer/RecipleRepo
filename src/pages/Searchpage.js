@@ -3,7 +3,7 @@ import SearchForm from "../components/SearchForm";
 import { APIEdamam } from "../services/APIedamam";
 import RecipeList from "../components/RecipeList";
 
-const SearchPage = () => {
+const SearchPage = (props) => {
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("");
 
@@ -23,6 +23,7 @@ const SearchPage = () => {
   };
   return (
     <div>
+      
       <SearchForm onSubmit={handleSearchSubmit} />
       <RecipeList recipes={recipes} />
     </div>

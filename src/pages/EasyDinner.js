@@ -4,7 +4,7 @@ import RecipeList from "../components/RecipeList";
 
 const EasyDinner = () => {
   const [recipes, setRecipes] = useState([]);
-  const [query] = useState("&Dinner&time=0-30&health=alcohol-free&dishType=main course");
+  const [query] = useState("&mealType=Dinner&time=0-30&health=alcohol-free&dishType=main course");
 
   useEffect(() => {
     getRecipes();

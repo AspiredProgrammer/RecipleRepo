@@ -1,35 +1,40 @@
-import React from "react";
-import SearchBar from "../components/SearchForm";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { APIByType } from "../services/APIByType";
+import Output from "./Output";
+import { breakfast, lunch, Dinner, snack, teatime } from '../assets/assets';
 
 const Home = () => {
   const navigate = useNavigate();
+  const [value, setValue] = useState("");
+
+  const handleChange = (category) => {
+    setValue(category);
+    navigate("/CategoryResults");
+  };
+
   return (
     <div className="Home">
       <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of your application.</p>
       <div className="Body">
         <div className="RecipeCard">
           Breakfast
-          <img src="../assets/breakfastImage.jpg" alt="image placeholder" onClick={() => {navigate("/Search") }} value="breakfast"/>
+          <img src={breakfast} alt="image placeholder" onClick={() => handleChange("&mealType=breakfast")} />
         </div>
         <div className="RecipeCard">
           Lunch
-          <img src="https://placehold.co/600x400/png" alt="image placeholder" />
+          <img src={lunch} alt="image placeholder" onClick={() => handleChange("&mealType=lunch")} />
         </div>
         <div className="RecipeCard">
           Dinner
-          <img src="https://placehold.co/600x400/png" alt="image placeholder" />
+          <img src={Dinner} alt="image placeholder" onClick={() => handleChange("&mealType=dinner")} />
         </div>
         <div className="RecipeCard">
           Snack
-          <img src="https://placehold.co/600x400/png" alt="image placeholder" />
+          <img src={snack} alt="image placeholder" onClick={() => handleChange("&mealType=snack")} />
         </div>
-
-        <div className="RecipeCard">
+        <div className="RecipeCard-Teatime">
           Teatime
-          <img src="https://placehold.co/600x400/png" alt="image placeholder" />
+          <img src={teatime} alt="image placeholder" onClick={() => handleChange("&mealType=teatime")} />
         </div>
       </div>
     </div>

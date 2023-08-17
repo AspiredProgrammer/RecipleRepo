@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import RecipeList from "../components/RecipeList"; 
-import { APIByCal } from "../services/APIByCal";
+import { APIEdamam } from "../services/APIedamam";
 
 const Healthy = () => {
   const [recipes, setRecipes] = useState([]);
-  const [caloriesLabel] = useState("700"); 
+  const [query] = useState("&calories=700"); 
   // Specify the calories label for healthy recipes
 
   useEffect(() => {
     getRecipes();
-  }, [caloriesLabel]);
+  }, [query]);
 
   const getRecipes = async () => {
-    const data = await APIByCal(caloriesLabel);
+    const data = await APIEdamam(query);
     setRecipes(data);
   };
 
@@ -26,11 +26,7 @@ const Healthy = () => {
         Healthy recipes provide meals with the recommended amount of 700 <br />
         calories (for a full-grown adult).
       </p>
-      {recipes && recipes.length > 0 ? (
-        <RecipeList recipes={recipes} />
-      ) : (
-        <p>No recipes found.</p>
-      )}
+      <RecipeList recipes={recipes} />
     </div>
   );
 };

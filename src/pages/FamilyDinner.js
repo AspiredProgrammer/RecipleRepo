@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react"; 
 import RecipeList from "../components/RecipeList"; 
-import { APIByType } from "../services/APIByType"; 
+import { APIEdamam } from "../services/APIedamam"; 
 
-const FamilyDinner = (props) => {
+const FamilyDinner = () => {
   const [recipes, setRecipes] = useState([]);
-  const [mealType] = useState("Dinner&ingr=5-10&dishType=main course");
+  const [query] = useState("&mealType=Dinner&ingr=5-10&dishType=main course");
 
   useEffect(() => {
     getRecipes();
-  }, [mealType]);
+  }, [query]);
 
   const getRecipes = async () => {
-    const data = await APIByType(mealType);
+    const data = await APIEdamam(query);
     setRecipes(data);
   };
 
@@ -25,11 +25,7 @@ const FamilyDinner = (props) => {
         <br />
         with over five ingredients and with the main course as the type of dish.
       </p>
-      {recipes && recipes.length > 0 ? (
-        <RecipeList recipes={recipes} />
-      ) : (
-        <p>No recipes found.</p>
-      )}
+      <RecipeList recipes={recipes} />
     </div>
   );
 };

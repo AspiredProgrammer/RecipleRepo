@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/styles.scss";
+import "../Styles/styles.scss";
 
 const SearchForm = ({ onSubmit }) => {
   const [search, setSearch] = useState("");
@@ -16,6 +16,7 @@ const SearchForm = ({ onSubmit }) => {
 
   return (
     <div className="SearchForm">
+      <h3>Welcome to the Search Page</h3>
       <form onSubmit={handleSubmit} className="search-form">
         <input
           className="search-bar"
