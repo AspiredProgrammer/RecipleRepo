@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/styles.scss";
+import "../styles/styles.scss";
 
 const SearchForm = ({ onSubmit }) => {
   const [search, setSearch] = useState("");

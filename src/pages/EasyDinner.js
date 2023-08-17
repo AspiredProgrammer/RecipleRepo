@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { APIByType } from "../services/APIByType";
+import { APIEdamam } from "../services/APIedamam";
 import RecipeList from "../components/RecipeList";
 
 const EasyDinner = () => {
   const [recipes, setRecipes] = useState([]);
-  const [mealType] = useState("Dinner&time=0-30&health=alcohol-free&dishType=main course");
+  const [query] = useState("&Dinner&time=0-30&health=alcohol-free&dishType=main course");
 
   useEffect(() => {
     getRecipes();
-  }, [mealType]);
+  }, [query]);
 
   const getRecipes = async () => {
-    const data = await APIByType(mealType);
+    const data = await APIEdamam(query);
     setRecipes(data);
   };
 

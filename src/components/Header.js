@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import EasyDinner from "../pages/EasyDinner";
 import FamilyDinner from "../pages/FamilyDinner";
 import Healthy from "../pages/Healthy";
-import "../Styles/styles.scss";
+import "../styles/styles.scss";
 import SearchPage from "../pages/Searchpage";
 
 function Header() {
