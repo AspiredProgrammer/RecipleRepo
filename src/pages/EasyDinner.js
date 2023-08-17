@@ -21,7 +21,7 @@ const EasyDinner = () => {
       <p className="Intro">
         This page provides a list of recipes falling under the category of 'easy
         dinner' meals. <br />
-        Easy dinner recipes provide dinner meals with a short prep-time of 30{" "}
+        Easy dinner recipes provide dinner meals with a short prep-time of up to 30{" "}
         <br />
         minutes or less.
       </p>

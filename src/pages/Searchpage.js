@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SearchForm from "../components/SearchForm";
-import { APIEdamam } from "../services/APIEdamam";
+import { APIEdamam } from "../services/APIedamam";
 import RecipeList from "../components/RecipeList";
 
 const SearchPage = () => {

@@ -3,7 +3,6 @@ import SearchBar from "../components/SearchForm";
 
 const FamilyDinner = (props) => {
   //calories = 700 for healthy
-  //Please add more suggestions that decrease the amount of possible results so it is a more specific list
   return (
     <div>
       <SearchBar />
