@@ -1,10 +1,19 @@
-import React from "react";
-import SearchBar from "../components/SearchForm";
+import React, { useState, useEffect } from "react"; 
+import RecipeList from "../components/RecipeList"; 
+import { APIByType } from "../services/APIByType"; 
 
 const FamilyDinner = (props) => {
-  //dishType = main course
-  //ingr= 5+
-  //mealType = dinner
+  const [recipes, setRecipes] = useState([]);
+  const [mealType] = useState("Dinner&ingr=5-10&dishType=main course");
+
+  useEffect(() => {
+    getRecipes();
+  }, [mealType]);
+
+  const getRecipes = async () => {
+    const data = await APIByType(mealType);
+    setRecipes(data);
+  };
 
   return (
     <div>
@@ -12,11 +21,15 @@ const FamilyDinner = (props) => {
       <p className="Intro">
         This page provides a list of recipes falling under the category of
         'family dinner' meals. <br />
-        Family dinner recipes provide dinner meals for a large number of people{" "}
+        Family dinner recipes provide dinner meals for a large number of people
         <br />
         with over five ingredients and with the main course as the type of dish.
       </p>
-
+      {recipes && recipes.length > 0 ? (
+        <RecipeList recipes={recipes} />
+      ) : (
+        <p>No recipes found.</p>
+      )}
     </div>
   );
 };

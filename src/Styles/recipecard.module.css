@@ -1,6 +1,6 @@
 .recipe{
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    box-shadow: 0px 5px 20px #474747;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
 
 .image{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
 }

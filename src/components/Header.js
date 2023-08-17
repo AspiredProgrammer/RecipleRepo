@@ -24,7 +24,7 @@ function Header() {
             <li className="Button" type="Search">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/search"
+                to="/Search"
               >
                 Search
               </Link>
@@ -32,7 +32,7 @@ function Header() {
             <li className="Button" type="Easy-Dinner">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/easyDinner"
+                to="/EasyDinner"
               >
                 Easy Dinner
               </Link>
@@ -40,7 +40,7 @@ function Header() {
             <li className="Button" type="Family-Dinner">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/familyDinner"
+                to="/FamilyDinner"
               >
                 Family Dinner
               </Link>
@@ -48,28 +48,28 @@ function Header() {
             <li className="Button" type="Healthy">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
-                to="/healthy"
+                to="/Healthy"
               >
                 Healthy
               </Link>
             </li>
-            <li className="Button" type="Search">
+            {/* <li className="Button" type="Search">
               <Link
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 to="/search"
               >
                 Healthy
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/EasyDinner" element={<EasyDinner />} />
-          <Route path="/familyDinner" element={<FamilyDinner />} />
-          <Route path="/healthy" element={<Healthy />} />
-          <Route path="/search" element={<SearchPage />} />
+          <Route path="/FamilyDinner" element={<FamilyDinner />} />
+          <Route path="/Healthy" element={<Healthy />} />
+          <Route path="/Search" element={<SearchPage />} />
         </Routes>
       </BrowserRouter>
     </div>

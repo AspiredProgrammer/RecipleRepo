@@ -3,6 +3,7 @@ import RecipeCard from "./RecipeCard";
 
 const RecipeList = ({ recipes }) => (
   <div className="recipes">
+
     {recipes.map((recipe) => (
       <RecipeCard
         key={recipe.recipe.label}

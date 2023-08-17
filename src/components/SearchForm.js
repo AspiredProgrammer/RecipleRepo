@@ -23,6 +23,7 @@ const SearchForm = ({ onSubmit }) => {
           value={search}
           onChange={updateSearch}
         />
+        <br/>
         <button className="Button" type="submit">
           Search
         </button>

@@ -1,3 +1,4 @@
+import "./Styles/App.css";
 import "./Styles/styles.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";

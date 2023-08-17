@@ -4,7 +4,7 @@ import '../Styles/styles.scss';
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  return <div className="Footer">{`Copyright © ${year}`}</div>;
+  return <div className="Footer">{`© ${year} Katherine D., Patrick W., Zeldrix D.`}</div>;
 };
 
 export default Footer;

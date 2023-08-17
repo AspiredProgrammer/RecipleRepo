@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "../components/SearchForm";
 import { useNavigate } from "react-router-dom";
+import { APIByType } from "../services/APIByType";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Home = () => {
       <div className="Body">
         <div className="RecipeCard">
           Breakfast
-          <img src="https://placehold.co/600x400/png" alt="image placeholder" />
+          <img src="../assets/breakfastImage.jpg" alt="image placeholder" onClick={() => {navigate("/Search") }} value="breakfast"/>
         </div>
         <div className="RecipeCard">
           Lunch
